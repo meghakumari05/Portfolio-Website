@@ -1,14 +1,12 @@
 'use client'
 
-import { FaCode, FaLaptopCode, FaGraduationCap } from 'react-icons/fa'
-import { motion } from 'framer-motion'
+import { FaCode, FaLaptopCode, FaGraduationCap } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import { 
   fadeInUp, 
   fadeInDown, 
   fadeIn, 
   staggerContainer, 
-  cardHover, 
-  cardHoverSmall 
 } from '@/utils/animations'
 
 export default function About() {
@@ -51,10 +49,10 @@ export default function About() {
           initial="initial"
           animate="animate"
         >
-          <motion.div 
+        <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
-            {...cardHover}
+            
           >
             <FaCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Frontend</h3>
@@ -69,7 +67,7 @@ export default function About() {
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
-            {...cardHover}
+            
           >
             <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Backend</h3>
@@ -83,7 +81,7 @@ export default function About() {
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
-            {...cardHover}
+           
           >
             <FaGraduationCap className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Tools & Others</h3>
@@ -118,7 +116,7 @@ export default function About() {
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            
           >
             <h3 className="text-xl font-semibold mb-2">BTech in Computer Science and Engineering</h3>
             <p className="text-primary mb-2">Bengal College of Engineering and Technology • 2021 - 2025</p>

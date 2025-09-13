@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaExchangeAlt, FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { fadeInUp, staggerContainer, cardHoverSmall } from '@/utils/animations';
+import { fadeInUp, staggerContainer } from '@/utils/animations';
 
 
 const Projects = () => {
@@ -25,7 +25,7 @@ const Projects = () => {
           key={project.title} 
           className='bg-white dark:bg-dark/50 rounded-lg shadow-md p-6'
           variants={fadeInUp}
-          {...cardHoverSmall}
+          
           >
 
             <div className='relative aspect-video mb-4 rounded-lg overflow-hidden'>
@@ -54,6 +54,7 @@ const Projects = () => {
               {
                 project.technologies.map((tech) => (
                   <motion.span
+                  key={tech}
                   className='px-3 py-1 bg-primary/10 text-primary rounded-full text-sm'
                   whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }} >
